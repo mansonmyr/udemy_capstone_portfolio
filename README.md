@@ -8,25 +8,7 @@ Capstone:
 
 Portfolio:
 1) Text to Morse Code Converter
-2) .
-3) .
-4) .
-5) .
-6) .
-7) .
-8) .
-9) .
-10) .
-11) .
-12) .
-13) .
-14) .
-15) .
-16) .
-17) .
-18) .
-19) .
-20) .
+2) Personal Website (https://mansonmyr.github.io/kaiong.github.io/)
 
 Other:
 1) Pong Game
