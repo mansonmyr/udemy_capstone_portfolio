@@ -12,5 +12,4 @@ Portfolio:
 7) Pomodoro
 
 ### Udemy Course: Python for Machine Learning & Data Science Masterclass
-Capstone:
-1) 
+
