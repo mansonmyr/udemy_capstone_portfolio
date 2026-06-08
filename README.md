@@ -1,4 +1,4 @@
-# Capstone/Portfolio 
+# Portfolio 
 This repository host my capstone/portfolio learned through Udemy. It's purpose is to record and shows my python programming work, that is linked from my LinkedIn profile.
 
 ### Udemy Course: 100 Days of Code™: The Complete Python Pro Bootcamp
@@ -11,5 +11,4 @@ Portfolio:
 6) Pong Game
 7) Pomodoro
 
-### Udemy Course: Python for Machine Learning & Data Science Masterclass
 
