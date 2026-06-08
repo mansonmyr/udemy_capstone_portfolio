@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kai Hong's Python capstone portfolio rebuilt as browser-ready apps for Netlify.">
+    <title>Kai Hong Python Capstone Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#cv" data-target="cv" aria-label="Open CV">
+        <span class="brand-mark">KH</span>
+        <span>
+          <strong>Ooi Kai Hong</strong>
+          <small>Python capstone portfolio</small>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="Portfolio projects">
+        <button class="tab is-active" type="button" data-target="cv">CV</button>
+        <button class="tab" type="button" data-target="pomodoro">Pomodoro</button>
+        <button class="tab" type="button" data-target="flashcards">Flashcards</button>
+        <button class="tab" type="button" data-target="blackjack">Blackjack</button>
+        <button class="tab" type="button" data-target="morse">Morse</button>
+        <button class="tab" type="button" data-target="pong">Pong</button>
+        <button class="tab" type="button" data-target="turtle">Turtle Crossing</button>
+      </nav>
+    </header>
+
+    <main class="workspace">
+      <section class="panel is-active" id="cv" data-panel="cv" aria-labelledby="cv-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Portfolio home</p>
+            <h1 id="cv-title">Researcher, biomedical scientist, and Python learner.</h1>
+          </div>
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:mansonooi@yahoo.com">Email</a>
+            <a class="button" href="https://www.linkedin.com/in/mk-990801/">LinkedIn</a>
+            <a class="button" href="https://github.com/mansonmyr">GitHub</a>
+          </div>
+        </div>
+
+        <div class="cv-grid">
+          <article class="summary-block lead">
+            <h2>Profile</h2>
+            <p>
+              Research-oriented biomedical science graduate with interdisciplinary training in
+              medical biotechnology, health research ethics, translational biomedical research,
+              image analysis, and Python programming.
+            </p>
+            <p>
+              This Netlify version turns seven local Python capstones into browser-ready work:
+              a CV site, Pomodoro timer, Korean flashcards, Blackjack, Morse converter, Pong,
+              and Turtle Crossing.
+            </p>
+          </article>
+
+          <article class="summary-block">
+            <h2>Education</h2>
+            <ul class="timeline">
+              <li><strong>University of Malaya</strong><span>Master of Health Research Ethics</span></li>
+              <li><strong>Sunway University</strong><span>BSc (Hons) Medical Biotechnology</span></li>
+              <li><strong>SACE Board of South Australia</strong><span>South Australian Certificate of Education</span></li>
+            </ul>
+          </article>
+
+          <article class="summary-block">
+            <h2>Experience</h2>
+            <ul class="timeline">
+              <li><strong>HKUST Guangzhou</strong><span>Research Assistant in protein localization and imaging</span></li>
+              <li><strong>University of Malaya</strong><span>Health ethics, clinical research, and review projects</span></li>
+              <li><strong>Syneos Health</strong><span>Trial Master File document specialist</span></li>
+            </ul>
+          </article>
+
+          <article class="summary-block">
+            <h2>Capstone Stack</h2>
+            <ul class="skill-list">
+              <li>Python foundations</li>
+              <li>Tkinter GUI logic</li>
+              <li>Turtle game loops</li>
+              <li>CSV data handling</li>
+              <li>Browser JavaScript ports</li>
+              <li>Netlify static deployment</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="pomodoro" data-panel="pomodoro" aria-labelledby="pomodoro-title">
+        <div class="panel-heading compact">
+          <div>
+            <p class="eyebrow">Tkinter to browser</p>
+            <h1 id="pomodoro-title">Pomodoro timer</h1>
+          </div>
+          <div class="project-meta">25 / 5 / 20</div>
+        </div>
+
+        <div class="tool-layout pomodoro-layout">
+          <div class="tomato-stage" aria-live="polite">
+            <img src="assets/tomato.png" alt="Tomato timer">
+            <div class="timer-readout" id="pomodoro-time">00:00</div>
+          </div>
+          <div class="control-panel">
+            <h2 id="pomodoro-mode">Timer</h2>
+            <div class="button-row">
+              <button class="button primary" type="button" id="pomodoro-start">Start</button>
+              <button class="button" type="button" id="pomodoro-reset">Reset</button>
+            </div>
+            <div class="session-dots" id="pomodoro-marks" aria-label="Completed work sessions"></div>
+            <div class="settings-grid">
+              <label>Work <input id="work-minutes" min="1" max="60" type="number" value="25"></label>
+              <label>Short <input id="short-minutes" min="1" max="30" type="number" value="5"></label>
+              <label>Long <input id="long-minutes" min="1" max="60" type="number" value="20"></label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="flashcards" data-panel="flashcards" aria-labelledby="flashcards-title">
+        <div class="panel-heading compact">
+          <div>
+            <p class="eyebrow">Tkinter and pandas to browser</p>
+            <h1 id="flashcards-title">Korean flashcards</h1>
+          </div>
+          <div class="project-meta" id="flashcard-count">Loading</div>
+        </div>
+
+        <div class="flashcard-layout">
+          <div class="flashcard-scene" aria-live="polite">
+            <div class="flashcard" id="flashcard">
+              <div class="flashcard-face front">
+                <p id="flashcard-title">Korean</p>
+                <strong id="flashcard-word">Loading...</strong>
+                <span id="flashcard-romanize"></span>
+              </div>
+              <div class="flashcard-face back">
+                <p>English</p>
+                <strong id="flashcard-english">Loading...</strong>
+              </div>
+            </div>
+          </div>
+          <div class="button-row centered">
+            <button class="round-action wrong" type="button" id="flashcard-next">Again</button>
+            <button class="round-action right" type="button" id="flashcard-known">Known</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="blackjack" data-panel="blackjack" aria-labelledby="blackjack-title">
+        <div class="panel-heading compact">
+          <div>
+            <p class="eyebrow">Terminal game to browser</p>
+            <h1 id="blackjack-title">Blackjack</h1>
+          </div>
+          <div class="project-meta" id="blackjack-status">Ready</div>
+        </div>
+
+        <div class="blackjack-table">
+          <div class="hand-area">
+            <h2>Dealer <span id="dealer-score"></span></h2>
+            <div class="cards" id="dealer-cards"></div>
+          </div>
+          <div class="hand-area">
+            <h2>You <span id="player-score"></span></h2>
+            <div class="cards" id="player-cards"></div>
+          </div>
+          <div class="button-row">
+            <button class="button primary" type="button" id="deal-game">Deal</button>
+            <button class="button" type="button" id="hit-card" disabled>Hit</button>
+            <button class="button" type="button" id="stand-card" disabled>Stand</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="morse" data-panel="morse" aria-labelledby="morse-title">
+        <div class="panel-heading compact">
+          <div>
+            <p class="eyebrow">CLI converter to browser</p>
+            <h1 id="morse-title">Text to Morse</h1>
+          </div>
+          <div class="project-meta">A-Z 0-9</div>
+        </div>
+
+        <div class="morse-grid">
+          <label class="text-field">
+            Plain text
+            <textarea id="morse-input" rows="8" spellcheck="false">Hello Netlify 2026</textarea>
+          </label>
+          <label class="text-field">
+            Morse code
+            <textarea id="morse-output" rows="8" spellcheck="false" readonly></textarea>
+          </label>
+          <div class="button-row">
+            <button class="button primary" type="button" id="morse-convert">Convert</button>
+            <button class="button" type="button" id="morse-copy">Copy</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="pong" data-panel="pong" aria-labelledby="pong-title">
+        <div class="panel-heading compact">
+          <div>
+            <p class="eyebrow">Turtle graphics to Canvas</p>
+            <h1 id="pong-title">Pong</h1>
+          </div>
+          <div class="project-meta" id="pong-status">0 : 0</div>
+        </div>
+
+        <div class="game-layout">
+          <canvas class="game-canvas pong-canvas" id="pong-canvas" width="800" height="600"></canvas>
+          <div class="button-row centered">
+            <button class="button primary" type="button" id="pong-toggle">Pause</button>
+            <button class="button" type="button" id="pong-reset">Reset</button>
+          </div>
+          <div class="mobile-controls">
+            <button type="button" data-pong="left-up">L Up</button>
+            <button type="button" data-pong="left-down">L Down</button>
+            <button type="button" data-pong="right-up">R Up</button>
+            <button type="button" data-pong="right-down">R Down</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="turtle" data-panel="turtle" aria-labelledby="turtle-title">
+        <div class="panel-heading compact">
+          <div>
+            <p class="eyebrow">Turtle graphics to Canvas</p>
+            <h1 id="turtle-title">Turbo Turtle Crossing</h1>
+          </div>
+          <div class="project-meta" id="turtle-status">Level 1</div>
+        </div>
+
+        <div class="game-layout">
+          <canvas class="game-canvas turtle-canvas" id="turtle-canvas" width="600" height="600"></canvas>
+          <div class="button-row centered">
+            <button class="button primary" type="button" data-difficulty="1">Easy</button>
+            <button class="button" type="button" data-difficulty="1.5">Medium</button>
+            <button class="button" type="button" data-difficulty="2.2">Hard</button>
+            <button class="button" type="button" id="turtle-pause">Pause</button>
+          </div>
+          <div class="mobile-controls direction-pad">
+            <button type="button" data-move="up">Up</button>
+            <button type="button" data-move="left">Left</button>
+            <button type="button" data-move="down">Down</button>
+            <button type="button" data-move="right">Right</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
